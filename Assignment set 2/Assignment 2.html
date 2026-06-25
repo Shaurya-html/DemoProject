@@ -1,0 +1,101 @@
+<html>
+    <body>
+        <table border="2">
+            <tr>
+                <th>Level</th>
+                <th colspan="5">Outbound Payment</th>
+            </tr>
+
+            <tr>
+                <th colspan="2">Sort ascending</th>
+                <th colspan="4">Payee / Name</th>
+            </tr>
+
+            <tr>
+                <th>Position</th>
+                <th>Length</th>
+                <th>Format</th>
+                <th>PAD</th>
+                <th>Data</th>
+                <th>Comment</th>
+            </tr>
+
+            <tr>
+                <th colspan="2">New Record</th>
+                <th colspan="4">Entry_Detail_CR</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>Number</td>
+                <td>L,'0'</td>
+                <td>6</td>
+                <td>Record Type</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>Alpha</td>
+                <td>R,''</td>
+                <td>DECODE</td>
+                <td>Transaction</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>9</td>
+                <td>Number</td>
+                <td>L,'0'</td>
+                <td>PayeeBankAcc/BranchNumber</td>
+                <td>Receiving</td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>17</td>
+                <td>Alpha</td>
+                <td>R,''</td>
+                <td>PayeeBankAcc/BranchNumber</td>
+                <td>DFI Account</td>
+            </tr>
+
+            <tr>
+                <td>30</td>
+                <td>10</td>
+                <td>Number,Integer</td>
+                <td>L,'0'</td>
+                <td>PayeeBankAcc/Value*100</td>
+                <td>Amount</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>Number</td>
+                <td>L,'0'</td>
+                <td>6</td>
+                <td>Record Type</td>
+            </tr>
+
+            <tr>
+                <td>40</td>
+                <td>15</td>
+                <td>Alpha</td>
+                <td>R,''</td>
+                <td>PayeeBankAcc/PaymentRefernceNumber</td>
+                <td>Identification</td>
+            </tr>
+
+            <tr>
+                <td>55</td>
+                <td>22</td>
+                <td>Alpha</td>
+                <td>R,''</td>
+                <td>NVL(Payee/AlternateName,Payee/Name)</td>
+                <td>Receiving Number</td>
+            </tr>
+        </table>
+    </body>
+</html>

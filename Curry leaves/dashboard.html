@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curry Leaves | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">Curry Leaves</div>
+
+        <div class="add-cuisine">
+            <input type="text" placeholder="+ Add a new cuisine" class="add-cuisine-input" />
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-page="home">🏠 Home</a>
+            <a href="#" class="nav-item" data-page="bin">🗑 Bin</a>
+            <div class="nav-divider"></div>
+            <a href="#" class="nav-item" data-page="north-indian">North Indian</a>
+            <a href="#" class="nav-item" data-page="south-indian">South Indian</a>
+            <a href="#" class="nav-item" data-page="beverages">Beverages</a>
+            <a href="#" class="nav-item" data-page="desserts">Desserts</a>
+            <a href="#" class="nav-item" data-page="coolers">Coolers</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- HOME PAGE -->
+        <div class="page active" id="page-home">
+            <div class="page-header">
+                <h2>Welcome back!</h2>
+                <p>Here's an overview of customer interest across cuisines.</p>
+            </div>
+            <div class="cuisine-cards">
+                <div class="cuisine-card">
+                    <div class="cuisine-card-title">North Indian</div>
+                    <div class="cuisine-card-items">12 items</div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar" style="width: 72%"></div>
+                    </div>
+                    <div class="progress-label">72% demand <span class="arrow-up">↑</span></div>
+                </div>
+                <div class="cuisine-card">
+                    <div class="cuisine-card-title">South Indian</div>
+                    <div class="cuisine-card-items">9 items</div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar" style="width: 58%"></div>
+                    </div>
+                    <div class="progress-label">58% demand <span class="arrow-up">↑</span></div>
+                </div>
+                <div class="cuisine-card">
+                    <div class="cuisine-card-title">Beverages</div>
+                    <div class="cuisine-card-items">7 items</div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar" style="width: 46%"></div>
+                    </div>
+                    <div class="progress-label">46% demand <span class="arrow-up">↑</span></div>
+                </div>
+                <div class="cuisine-card">
+                    <div class="cuisine-card-title">Desserts</div>
+                    <div class="cuisine-card-items">5 items</div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar" style="width: 61%"></div>
+                    </div>
+                    <div class="progress-label">61% demand <span class="arrow-up">↑</span></div>
+                </div>
+                <div class="cuisine-card">
+                    <div class="cuisine-card-title">Coolers</div>
+                    <div class="cuisine-card-items">4 items</div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar" style="width: 39%"></div>
+                    </div>
+                    <div class="progress-label">39% demand <span class="arrow-up">↑</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BIN PAGE -->
+        <div class="page" id="page-bin">
+            <div class="page-header">
+                <h2>Bin</h2>
+                <p>Deleted items. Restore anytime.</p>
+            </div>
+            <div class="menu-items" id="bin-items">
+                <p class="empty-bin">Bin is empty.</p>
+            </div>
+        </div>
+
+        <!-- NORTH INDIAN -->
+        <div class="page" id="page-north-indian">
+            <div class="page-header"><h2>North Indian</h2></div>
+            <div class="entry-card">
+                <div class="entry-row">
+                    <input type="text" class="input-title" placeholder="Dish name" />
+                    <input type="text" class="input-price" placeholder="₹ Price" />
+                </div>
+                <textarea class="input-desc" placeholder="Describe the dish"></textarea>
+                <button class="add-btn">Add Item</button>
+            </div>
+            <div class="menu-items" id="items-north-indian">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Palak Paneer</div>
+                        <div class="item-desc">Tender chicken in rich tomato-butter gravy</div>
+                    </div>
+                    <div class="item-price">₹320</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Dal Makhani</div>
+                        <div class="item-desc">Slow cooked black lentils with cream and spices</div>
+                    </div>
+                    <div class="item-price">₹220</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Paneer Tikka</div>
+                        <div class="item-desc">Grilled cottage cheese with bell peppers and spices</div>
+                    </div>
+                    <div class="item-price">₹280</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOUTH INDIAN -->
+        <div class="page" id="page-south-indian">
+            <div class="page-header"><h2>South Indian</h2></div>
+            <div class="entry-card">
+                <div class="entry-row">
+                    <input type="text" class="input-title" placeholder="Dish name" />
+                    <input type="text" class="input-price" placeholder="₹ Price" />
+                </div>
+                <textarea class="input-desc" placeholder="Describe the dish"></textarea>
+                <button class="add-btn">Add Item</button>
+            </div>
+            <div class="menu-items" id="items-south-indian">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Masala Dosa</div>
+                        <div class="item-desc">Crispy rice crepe with spiced potato filling</div>
+                    </div>
+                    <div class="item-price">₹120</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Idli Sambar</div>
+                        <div class="item-desc">Steamed rice cakes served with lentil soup</div>
+                    </div>
+                    <div class="item-price">₹90</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BEVERAGES -->
+        <div class="page" id="page-beverages">
+            <div class="page-header"><h2>Beverages</h2></div>
+            <div class="entry-card">
+                <div class="entry-row">
+                    <input type="text" class="input-title" placeholder="Dish name" />
+                    <input type="text" class="input-price" placeholder="₹ Price" />
+                </div>
+                <textarea class="input-desc" placeholder="Describe the dish"></textarea>
+                <button class="add-btn">Add Item</button>
+            </div>
+            <div class="menu-items" id="items-beverages">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Masala Chai</div>
+                        <div class="item-desc">Spiced Indian tea with milk</div>
+                    </div>
+                    <div class="item-price">₹60</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="page" id="page-desserts">
+            <div class="page-header"><h2>Desserts</h2></div>
+            <div class="entry-card">
+                <div class="entry-row">
+                    <input type="text" class="input-title" placeholder="Dish name" />
+                    <input type="text" class="input-price" placeholder="₹ Price" />
+                </div>
+                <textarea class="input-desc" placeholder="Describe the dish"></textarea>
+                <button class="add-btn">Add Item</button>
+            </div>
+            <div class="menu-items" id="items-desserts">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Gulab Jamun</div>
+                        <div class="item-desc">Soft milk dumplings soaked in rose sugar syrup</div>
+                    </div>
+                    <div class="item-price">₹80</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COOLERS -->
+        <div class="page" id="page-coolers">
+            <div class="page-header"><h2>Coolers</h2></div>
+            <div class="entry-card">
+                <div class="entry-row">
+                    <input type="text" class="input-title" placeholder="Dish name" />
+                    <input type="text" class="input-price" placeholder="₹ Price" />
+                </div>
+                <textarea class="input-desc" placeholder="Describe the dish"></textarea>
+                <button class="add-btn">Add Item</button>
+            </div>
+            <div class="menu-items" id="items-coolers">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <div class="item-name">Mango Lassi</div>
+                        <div class="item-desc">Chilled yogurt drink blended with fresh mango</div>
+                    </div>
+                    <div class="item-price">₹110</div>
+                    <div class="item-actions">
+                        <button class="icon-btn edit-btn" title="Edit">✏️</button>
+                        <button class="icon-btn delete-btn" title="Delete">🗑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<script>
+    // Page navigation
+    const navItems = document.querySelectorAll('.nav-item');
+    const pages = document.querySelectorAll('.page');
+
+    navItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = item.dataset.page;
+            navItems.forEach(n => n.classList.remove('active'));
+            pages.forEach(p => p.classList.remove('active'));
+            item.classList.add('active');
+            document.getElementById('page-' + target).classList.add('active');
+        });
+    });
+
+    // Delete item — move to bin
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.menu-item');
+            const name = item.querySelector('.item-name').textContent;
+            const desc = item.querySelector('.item-desc').textContent;
+            const price = item.querySelector('.item-price').textContent;
+
+            const binItems = document.getElementById('bin-items');
+            const emptyMsg = binItems.querySelector('.empty-bin');
+            if (emptyMsg) emptyMsg.remove();
+
+            const restored = document.createElement('div');
+            restored.classList.add('menu-item', 'bin-item');
+            restored.innerHTML = `
+                <div class="item-info">
+                    <div class="item-name">${name}</div>
+                    <div class="item-desc">${desc}</div>
+                </div>
+                <div class="item-price">${price}</div>
+                <div class="item-actions">
+                    <button class="icon-btn restore-btn" title="Restore">↩️</button>
+                </div>
+            `;
+            binItems.appendChild(restored);
+            item.remove();
+        });
+    });
+</script>
+
+</body>
+</html>

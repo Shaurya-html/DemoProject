@@ -1,0 +1,532 @@
+<html>
+
+
+    <head>
+        <style>
+
+            .body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .navbar{
+
+                display: flex;
+                border: 10px;
+                background-color: cadetblue;
+                justify-content: space-between;
+                padding: 10px;
+                align-items: center;
+                font-family: Arial, Helvetica, sans-serif;
+                top:0px;
+                left:0px;
+
+            }
+
+            .navlinks a{
+
+                text-decoration: none;
+                color:white;
+                padding-right: 25px;
+                transition: color 0.1s linear;
+            }
+            .navlinks a:hover{
+                color:rgb(249, 196, 61);
+            }
+
+            .hero{
+
+                background-image: url(img.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 40px;
+                
+
+            }
+
+            .hero button{
+
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(45, 159, 215);
+                color: white;
+                margin-left: 15px;
+                padding: 10px;
+
+            }
+
+            .aboutHeading{
+
+                text-align: center;
+
+
+            }
+
+            .about img{
+
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                margin-top: 60px;
+
+            }
+
+            .parent{
+                display: flex;
+                justify-content:space-between;
+            }
+
+            .AboutChild{
+                border:0px;
+                padding-top:50px;
+                padding-left: 50px;
+                padding-bottom:50px;
+            }
+
+
+            .skillsHeading{
+
+                text-align: center;
+
+            }
+
+            .SkillParent{
+
+                display:flex;
+                padding-left:100px;
+                padding-bottom:80px;
+                justify-content: space-evenly;
+
+            }
+
+            .Skillchild{
+
+                border:1px solid black;
+                height:200px;
+                width:100px;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-bottom:-100px;
+
+            }
+
+            .Skillchild img{
+
+                height: 70px;
+                width: 60px;
+            }
+
+            .prog{
+                width:100%;
+                height: 10px;
+                background-color:black;
+                border-radius: 20px;
+                margin-top: 90%;
+                
+            }
+
+            .shade{
+
+                width: 90%;
+                background-color:brown;
+                height:100%;
+                border-radius: 20px;
+                
+
+            }
+
+            .Projparent{
+
+                display:flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 20px;
+
+            }
+
+            .Projchild{
+                
+                border: 1px solid black;
+                padding: 40px;
+                transition: transform 0.3s linear, background-color 0.2s linear;
+                background-color: coral;
+                border-radius: 20px;
+            }
+
+            .Projchild:hover{
+
+                transform:scale(1.1);
+                background-color: rgb(255, 184, 158);
+
+            }
+
+            .Projchild img{
+
+                height: 400px;
+                width: 300px;
+                border-radius: 20px;
+
+            }
+
+            .Eduparent{
+
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+
+            .Educhild{
+
+                height:100px;
+                width: 300px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: bisque;
+                border-radius: 20px;
+                transition: transform 0.3s linear, background-color 0.3s linear;
+
+            }
+
+            .Educhild:hover{
+                transform:scale(1.1);
+                background-color:rgb(255, 214, 163);
+            }
+
+
+            .Educhild img{
+
+                height: 100px;
+                width: 100px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            .Edugrandchild2{
+
+                flex-direction: column;
+                text-align: center;
+                padding-right: 50px;
+
+            }
+
+            .educationHeading{
+                text-align:center;
+                padding: 30px;
+            }
+
+            .contactHeading{
+
+                text-align: center;
+                padding: 30px;
+
+            }
+
+            .about{
+                transition: background-color 0.2s ease-in-out;
+            }
+            .about:hover{
+                background-color:rgba(198, 244, 119, 0.5);
+            }
+
+            .skils{
+                transition: background-color 0.2s ease-in-out;
+            }
+            .skills:hover{
+                background-color:rgba(198, 244, 119, 0.5);
+            }
+
+            .projects{
+                transition: background-color 0.2s ease-in-out;
+            }
+            .projects:hover{
+                background-color:rgba(198, 244, 119, 0.5);
+            }
+
+            .education{
+                transition: background-color 0.2s ease-in-out;
+                padding-bottom: 30px;
+            }
+            .education:hover{
+                background-color:rgba(198, 244, 119, 0.5);
+            }
+
+            .contact{
+                transition: background-color 0.2s ease-in-out;
+                padding-bottom: 30px;
+                align-items:center;
+            }
+            .contact:hover{
+                background-color:rgba(198, 244, 119, 0.5);
+            }
+
+
+            .inputs input{
+                display:flex;
+                flex-direction: column;
+                margin:20px;
+                align-items:center;
+                height:50px;
+                width: 100px;
+            }
+
+            
+
+        </style>
+    </head>
+
+    <body class="body">
+
+        <div class="navbar">
+            
+            <div class="heading">
+
+                <h1>Shaurya</h1>
+            
+            </div>
+
+            <div class="navlinks">
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Education</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="hero">
+
+            <h1>Hi, I'm</h1>
+            <h2>Shaurya Joshi</h2>
+            <h3>Frontend Developer</h3>
+            <p>I build beautiful, responsive and user-friendly websites using HTML, CSS, & JS</p>
+            <button class="cv">Download CV</button>
+            <button class="hire">Hire me</button>
+
+        </div>
+
+        <div class="about">
+
+            <div class="aboutHeading">
+
+                <br>
+                <h1><u>About Me</u></h1>
+
+            </div>
+       
+            <div class="parent">
+                <div class="AboutChild">
+
+                    <img src="img.jpg">
+
+                </div>
+
+                <div class="AboutChild">
+
+                    <div class="intro">
+                      <h3>Hello! I'm Shaurya Joshi</h3>
+                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus neque id veniam! Unde beatae maiores voluptatem sequi repellat culpa molestias voluptatibus facilis ducimus asperiores quo, dolores, distinctio enim quibusdam.</p>
+                     </div>
+
+                    <div class="personal info">
+
+                        <h3>Name: Shaurya Joshi</h3>
+                        <h3>Email: shauryajoshi@gmail.com</h3>
+                        <h3>From: Nashik</h3>
+                        <h3>Freelance: Available</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+            
+
+                    
+        
+        </div>
+
+        <div class="skills">
+
+
+            <div class="skillsHeading">
+
+                <hr>
+                <h2><u>My Skills</u></h2>
+
+            </div>
+
+            <div class="SkillParent">
+                
+                <div class="Skillchild">
+                    <img src="img.jpg">
+                    <h5>HTML</h5>
+                    
+                    <div class="prog">
+
+                        <div class="shade"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="Skillchild">
+                    <img src="img.jpg">
+                    <h4>CSS</h4>
+                </div>
+
+
+                <div class="Skillchild">
+                    <img src="img.jpg">
+                    <h4>JSS</h4>
+                </div>
+
+
+                <div class="Skillchild">
+                    <img src="img.jpg">
+                    <h4>Bootstrap</h4>
+                </div>
+
+
+                <div class="Skillchild">
+                    <img src="img.jpg">
+                    <h4>Java</h4>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="projects">
+
+            <div class="Projparent">
+
+                <div class="Projchild">
+
+                    <img src="img.jpg">
+                    <h4>Portfolio Website</h4>
+                    <p>A personal portfolio website using html and css.</p>
+                    <button class="view">View More</button>
+
+                </div>
+
+                <div class="Projchild">
+
+                    <img src="img.jpg">
+                    <h4>E-Commerce Website</h4>
+                    <p>A responsive e-commerce website desgin.</p>
+                    <button class="view">View More</button>
+
+                 </div>
+
+                <div class="Projchild">
+
+                    <img src="img.jpg">
+                    <h4>Dashboard Website</h4>
+                    <p>A modern dashboard UI design.</p>
+                    <button class="view">View More</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="education">
+
+            <div class="educationHeading">
+
+                <h2><u>Education</u></h2>
+
+            </div>
+
+            <div class="Eduparent">
+
+                <div class="Educhild">
+
+                    <div class="Edugrandchild1">
+
+                        <img src="img.jpg">
+
+                    </div>
+
+                    <div class="Edugrandchild2">
+                        <h4>Diploma</h4>
+                        <p>Comp. Eng.; K. K. Wagh Poly.</p>
+                    </div>
+            
+                </div>
+
+                <div class="Educhild">
+                    <div class="Edugrandchild1">
+
+                        <img src="img.jpg">
+
+                    </div>
+                    
+                    <div class="Edugrandchild2">
+
+                        <h4>Bachelor's Degree</h4>
+                        <p>B. Sc.</p>
+
+                    </div>
+            
+                </div>
+
+                <div class="Educhild">
+
+                    <div class="Edugrandchild1">
+
+                        <img src="img.jpg">
+
+                    </div>
+                    <div class="Edugrandchild2">
+
+                        <h4>Master's Degree</h4>
+                        <p>M. Sc.</p>
+
+                    </div>
+            
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="contact">
+
+            <div class="contactHeading">
+
+                <h2><u>Contact Me</u></h2>
+
+            </div>
+
+            <div class="inputs">
+
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Your message">
+
+                <button class="msg">Send message</button>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+
+            <p>Shaurya Joshi</p>
+
+        </div>
+
+    </body>
+
+</html>

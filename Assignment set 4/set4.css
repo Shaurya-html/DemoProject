@@ -1,0 +1,29 @@
+p{
+    background-color:cadetblue;
+    color:crimson;
+}
+
+h4{
+    text-align: center;
+}
+
+#abcd{
+    text-align:center;
+    font-size: medium;
+}
+
+.division{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p,h4,h5{
+    color:darkmagenta;
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div h5{
+    color:green;
+}
