@@ -9,9 +9,78 @@
 
 .about{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    margin: 50px;
+}
+
+.carousel-wrapper {
+  max-width: 100%; 
+  margin: 0 auto;
+}
+
+.carousel-wrapper img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.card{   
+    width:80%;
+    height: 80%;
+    margin-top: 20px;                                                                   
+    transition: transform 0.2s linear, background-color 0.2s linear;
+}
+
+.card:hover{
+
+    transform: scale(1.1);
+    background-color:peachpuff;
+
+}
+
+.display-3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card-title{
+
+    font-weight: bold;
+    background-color:rgba(221, 160, 221, 0.5);
+    padding:5px;
+}
+
+.title{
+    padding:5px;
+}
+
+.hero{
+    margin-bottom:10px;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(0, 0, 0, 0.5)), url('cars_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+    text-align:start;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left: 25px;
+    color:rgb(255, 255, 255);
+    font-family:monospace;
+}
+
+.footer{
+    background-color: black;
+    text-align:center;
+    padding:5px;
+    color:aliceblue;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
 }

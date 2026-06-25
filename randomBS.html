@@ -11,89 +11,180 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+
   <!============================== Navbar===============================>
 
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><b>Cars, Cars, & Cars!</b></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="randomBS.html"><b>Cars, Cars, & Cars!</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link active" href="#">Contact Me</a>
             </li>
+
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-success" type="submit">Search</button>
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
 
-    <!============================== Carousel===============================>
+  <!============================== Hero===============================>
 
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="aventador.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Lamborghini Aventador</h5>
-              <p>Italian Automobile</p>
+    <div class="hero">
+
+        <h1>Welcome to 3C!</h1>
+        <p>Your one-stop destination for the latest car news, reviews, and everything automotive.</p>
+
+    </div>
+
+  <!============================== Carousel===============================>
+
+    <div class="carousel-wrapper">
+          <div id="carouselExampleAutoplaying" class="carousel slide">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <img src="aventador.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Lamborghini Aventador</h5>
+                    <p>Italian Automobile</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="bentley_conti.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Bentley Continental GT</h5>
+                    <p>British Automobile</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="amg-one.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Mercedes AMG ONE</h5>
+                    <p>German Automobile</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="bentley_conti.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Bentley Continental GT</h5>
-              <p>British Automobile</p>
-            </div>
-            <div class="carousel-item">
-              <img src="amg-one.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Mercedes AMG ONE</h5>
-                <p>German Automobile</p>
+    </div>
+
+  <!============================== Info cards===============================>
+
+    <h1 class="display-3">▼ The More You Know ▼</h1>
+
+    <div class="about">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card CARD">
+                  <img src="https://www.tovima.com/wp-content/uploads/2025/01/29/29744182207_75e7b06aa4_k.jpg"
+                    class="card-img-top" alt="The Benz Patent">
+                  <div class="card-body">
+                    <h5 class="card-title">Who invented the first car?</h5>
+                    <p class="card-text">Karl Benz, in 1886. The Benz Patent-Motorwagen is recognized as the first true,
+                      gasoline-powered automobile.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.noZTPbKUzOFyCw73Pj1LlAHaDj%3Fpid%3DApi&f=1&ipt=6c386c559c7c97058231fc92dc6c93caf8c828a0502154b5e0484191cf03ce61&ipo=images"
+                    class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">What fuels do cars use?</h5>
+                    <p class="card-text">Cars primarily run on refined petroleum products like gasoline and diesel, but
+                      they also utilize alternative fuels such as ethanol, compressed natural gas (CNG), liquefied
+                      petroleum gas (LPG), hydrogen, and electricity stored in chemical batteries.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.5aYG4-2E8kadT0alcF-jTAHaEK%3Fr%3D0%26pid%3DApi&f=1&ipt=a67363ce4a9fee67531867c036cd6cf8b514d5a53ab748e476da497ab3bea5a2&ipo=images"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> What's E20 & E85?</h5>
+                    <p class="card-text">India’s Ethanol Blending Programme (EBP) involves mixing fuel-grade ethanol,
+                      produced through the fermentation of agricultural feedstocks like sugarcane, molasses, maize, and
+                      broken rice, with conventional petrol. The initiative was launched to reduce India's massive
+                      dependence on imported crude oil, improve energy security, lower carbon emissions, and create a
+                      stable domestic market for farmers.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fengineerine.com%2Fwp-content%2Fuploads%2F2022%2F10%2Fimg_633d7d6ede988-1025x538.jpg&f=1&nofb=1&ipt=6002c8d8a125c12e8d8b5b72c09ad36b5de5b52b719de25865ec1c3f8e10d99b"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Types of ICE engines</h5>
+                    <p class="card-text">Internal combustion engines are primarily categorized by their ignition method,
+                      cycle, and configuration; the two main types are spark-ignition (petrol) engines, which use a
+                      spark plug to ignite a fuel-air mixture, and compression-ignition (diesel) engines, which use
+                      high-pressure heat to cause spontaneous ignition.</p>
+                    <p class="card-text">Engines are further defined by their stroke cycle, with the four-stroke
+                      (intake, compression, power, exhaust) being the industry standard for efficiency and the
+                      two-stroke offering higher power density at the cost of fuel economy. Configuration-wise, they are
+                      grouped by cylinder layout, most commonly appearing as inline, V-shape, or flat (boxer)
+                      arrangements, each optimized for different balance, packaging, and performance characteristics.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
 
-      <!============================== Info cards===============================>
-        <div class="about">
-          <div class="card text-bg-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Info card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card’s content.</p>
+            <!=============================== Footer===============================>
+
+    </div>
+  <!============================== Footer===============================>
+            <div class="footer">
+
+              <footer class="bg-dark text-white text-center py-4">
+                <footer>
+                  <a href="#"><img src="instagram.png" width="40px" alt="Instagram"></a>
+                  <a href="#"><img src="twitter.png" width="40px" alt="Twitter"></a>
+                  <a href="#"><img src="youtube.png" width="40px" alt="YouTube"></a>
+                </footer>
+                <p class="mt-3 mb-0">© 2025 3C. All rights reserved.</p>
+              </footer>
+
             </div>
-          </div>
-
-
-        </div>
-
 </body>
 
 </html>
