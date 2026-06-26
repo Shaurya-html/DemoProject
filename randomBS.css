@@ -22,8 +22,8 @@
 }
 
 .carousel-wrapper img {
-  height: 50vh;
-  object-fit: cover;
+  height: auto;
+  object-fit:cover;
 }
 
 .card{   
@@ -44,6 +44,8 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 50px;
     text-align: center;
+    background-color:rgba(231, 254, 79, 0.249);
+    padding:20px;
 }
 
 .card-title{
