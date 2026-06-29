@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var  number1 = 3.14;
+        const number2 = 20;
+        let number3 = 30;
+
+        document.write("Hello world");
+        document.write("\n",number1);
+        document.write("\n"+ number1 + "\n"+ number2 + "\n" + number3);
+
+        if(number1 > number2){
+            document.write("\nNumber 1 is greater");
+        }
+        else if(number2 > number1){
+            document.write("\nNumber 2 is greater");
+        }
+        else{
+            document.write("\nBoth are equal");
+        }
+
+        switch(number3){
+            case 30: document.write("\nThis is case 1.");
+            break;
+
+            default: document.write("\nThis is the default case.");
+            break;
+        }
+
+
+    </script>
+</body>
+</html>
