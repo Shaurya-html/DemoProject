@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var n1 = parseInt(prompt("Enter 1st number:"));
+        var n2 = parseInt(prompt("Enter 2nd number:"));
+
+        var ch = prompt("Enter the symbol of the operation you want to perform:");
+
+        function add(n1, n2) {
+            return n1 + n2;
+        }
+
+        function sub(n1, n2) {
+            return n1 - n2;
+        }
+
+        function mul(n1, n2) {
+            return n1 * n2;
+        }
+
+        function div(n1, n2) {
+            return n1 / n2;
+        }
+
+        if(ch=="+"){
+            alert(add(n1,n2));
+        }
+        else if(ch=="-"){
+            alert(sub(n1,n2));
+        }
+        else if(ch=="*"){
+            alert(mul(n1,n2));
+        }
+        else if(ch=="/"){
+            alert(div(n1,n2));
+        }
+
+    </script>
+</body>
+
+</html>
