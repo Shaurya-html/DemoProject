@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1 id="demo">hello world</h1>
-    <button onCLick="msg();">click me</button>
-    
+    <h1 class="demo">hello world</h1>
+    <h1 class="demo">Wassup world</h1>
+    <button onCLick="msg();">click me</button><br><br>
+
+    <form onsubmit="validation()">
+        Name: <input type="text" name="name" id="name"><br><br>
+        Email: <input type="email" name="email" id="email"><br><br>
+        Password: <input type="password" name="password" id="password"><br><br>
+        Reenter password: <input type="password" name="password" id="reenter"><br><br>
+        <input type="submit" value="submit">
+    </form>
+
     <script>
 
-        function msg(){
-            var result = document.getElementById("demo").innerHTML="Bye world";
+        function msg() {
+            var result = document.getElementsByClassName("demo");
+            result[0].innerHTML = "Hi world";
+            result[1].style.color = "blue";
+        }
+
+        function validation() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var reenter = document.getElementById("reenter").value;
+
+            if (name == "" || email == "" || password == "" || reenter == "") {
+                alert("Please fill all the fields");
+                return false;
+            }
+            else {
+                alert("Successfully submitted.");
+            }
+
+            if (password != reenter) {
+                alert("Passwords entered don't match");
+            }
+
         }
 
     </script>
 
 </body>
+
 </html>
