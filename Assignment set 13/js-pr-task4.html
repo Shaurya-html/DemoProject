@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aut cumque dignissimos, voluptates dicta a
+        ullam doloribus necessitatibus. Quidem, assumenda aliquid corporis beatae sunt iste temporibus? Deleniti
+        sapiente odit sint!</p>
+    <button onclick="show();">Show</button>
+    <button onclick="hide();">Hide</button>
+
+    <script>
+        function show() {
+
+            var paragraph = document.getElementById("paragraph");
+            paragraph.style.display = "block";
+        }
+
+        function hide() {
+
+            var paragraph = document.getElementById("paragraph");
+            paragraph.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

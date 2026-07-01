@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="demo">hello world</h1>
+    <h1 class="demo">What's up world</h1>
+    <button onclick="msg()">Click me</button><br><br>
+
+
+
+    <script>
+        function msg() {
+
+            var result = document.getElementsByClassName("demo");
+            result[0].innerHTML = "Hi world";
+            result[1].style.backgroundColor = "blue";
+            
+        }
+
+    </script>
+</body>
+</html>
